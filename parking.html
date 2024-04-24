@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="bootstrap.min.css">
+  <link rel="stylesheet" href="parking.css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:wght@100;400&display=swap" rel="stylesheet"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Smart Avtoturargoh</title>
+</head>
+<body>
+  <!--Header section-->
+  <div class="navbar">
+    <div class="brand">SMART AVTOTURARGOH v 1.0
+      <!-- <div class="btn-kirish"><a href="login.html">Kirish</a></div> -->
+    </div>
+  </div>
+  <div class="dashboard" id="blur">
+  <header id="header">
+    <div class="fixed">
+      <div class="bosh-btn"><div class="div-bosh"></div><span class="button-description">- Bo'sh joylar</span></div>
+      <div class="band-btn"><div class="div-band"></div><span class="button-description">- Band qilingan joylar</span></div>
+      <div class="siz-btn"><div class="div-siz"></div><span class="button-description">- Sizning joyingiz</span></div>
+    </br>
+      <button class="tolov" onclick="calculatePayment()">To'lovni Hisoblash</button>
+      <div id="paymentInfo"></div>
+    </div>
+  </header>
+  <!--Header section end-->
+  <!--Main section-->
+  <main>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="offset-md-3 col px-5">
+          <div class="row">
+            <div class="col-12">
+              <table>
+                <tr>
+                  <td class="slot1"><button class="button1" onclick="toggle()"><p>C 01</p></button></td>
+                  <td class="slot2"><button class="button2" onclick="toggle()"><p>C 02</p></button></td>
+                  <td class="slot3"><button class="button3" onclick="toggle()"><p>C 03</p></button></td>
+                  <td class="slot4"><button class="button4" onclick="toggle()"><p>C 04</p></button></td>
+                  <td class="slot5"><button class="button5" onclick="toggle()"><p>C 05</p></button></td>
+                  <td class="slot6"><button class="button6" onclick="toggle()"><p>C 06</p></button></td>
+                  <td class="slot7"><button class="button7" onclick="toggle()"><p>C 07</p></button></td>
+                </tr>
+                <tr>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td></td>
+                  <td class="slot8"><button class="button8" onclick="toggle()"><p>B 06</p></button></td>
+                  <td class="slot9"><button class="button9" onclick="toggle()"><p>B 07</p></button></td>
+                  <td class="slot10"><button class="button10" onclick="toggle()"><p>B 08</p></button></td>
+                  <td class="slot11"><button class="button11" onclick="toggle()"><p>B 09</p></button></td>
+                  <td class="slot12"><button class="button12" onclick="toggle()"><p>B 10</p></button></td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td></td>
+                  <td class="slot13"><button class="button13" onclick="toggle()"><p>B 05</p></button></td>
+                  <td class="slot14"><button class="button14" onclick="toggle()"><p>B 04</p></button></td>
+                  <td class="slot15"><button class="button15" onclick="toggle()"><p>B 03</p></button></td>
+                  <td class="slot16"><button class="button16" onclick="toggle()"><p>B 02</p></button></td>
+                  <td class="slot17"><button class="button17" onclick="toggle()"><p>B 01</p></button></td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td class="slot18"><button class="button18" onclick="toggle()"><p>A 01</p></button></td>
+                  <td class="slot19"><button class="button19" onclick="toggle()"><p>A 02</p></button></td>
+                  <td class="slot20"><button class="button20" onclick="toggle()"><p>A 03</p></button></td>
+                  <td class="slot21"><button class="button21" onclick="toggle()"><p>A 04</p></button></td>
+                  <td class="slot22"><button class="button22" onclick="toggle()"><p>A 05</p></button></td>
+                  <td class="slot23"><button class="button23" onclick="toggle()"><p>A 06</p></button></td>
+                  <td class="slot24"><button class="button24" onclick="toggle()"><p>A 07</p></button></td>
+                </tr>
+              </table>
+            </div>
+          </div>
+         
+        </div>
+      </div>
+    </div>
+  </main>
+</div>
+   <!--Main section end-->
+
+   <!--popup-->
+   <div id="popup">
+    <h3>Joy narxi: <br> 10.000 so'm/soat <br><br> </h3>
+    <div class="clock">
+      <h3>Boshlanish vaqti:</h3>
+      <h3> <span id="hrs">00</span>
+      <span>:</span>
+      <span id="min">00</span></h3>
+      <br>
+      <a id="toggleButton" href="login.html">Band qilish</a>
+      <img class="xicon" onclick="toggle()" src="xicon.png">
+    </div>
+  </div>
+  <!--popup end-->
+</body>
+<script src="parking.js"></script>
+<script>
+  
+document.addEventListener('DOMContentLoaded', function() {
+  let hrs = document.getElementById("hrs");
+  let min = document.getElementById("min");
+
+  let currentTime = new Date();
+
+  hrs.innerHTML = currentTime.getHours();
+  min.innerHTML = currentTime.getMinutes();
+});
+</script>
+</html>
+
+

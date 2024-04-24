@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="login.css">
+    <title>Tizimga kirish | Ro'yhatdan o'tish</title>
+</head>
+
+<body>
+<div class="col-sm-12 col-md-6 col-lg-4">
+    <div class="container" id="container">
+        <div class="form-container sign-up">
+            <form id="loginForm">
+                <h1>Hisob yaratish</h1>
+                <input type="text" id="full_name" name="full_name" placeholder="F.I.Sh" required>
+                <input type="tel" id="phone_number" name="phone_number" placeholder="Telefon raqam" required>
+                <input type="password" id="password" name="password" placeholder="Parol" required>
+                <input type="password" id="confirm_password" name="confirm_password" placeholder="Parolni tasdiqlash">
+                <button type="submit" id="regbutton">Ro'yhatdan o'tish</button>
+            </form>
+        </div>
+        <div class="form-container login">
+            <form class="signinForm">
+                <h1>Tizimga kirish</h1>
+                <input type="tel" id="phone_number" name="phone_number" placeholder="telefon raqam">
+                <input type="password" id="password" name="password" placeholder="Parol">
+                <button type="submit" id="loginButton" onclick="login()">Kirish</button>
+            </form>
+        </div>
+        <div class="toggle-container">
+            <div class="toggle">
+                <div class="toggle-panel toggle-left">
+                    <h1>Assalomu alaykum!</h1>
+                    <p>Saytning barcha imkoniyatlaridan foydalanish uchun shaxsiy ma'lumotlaringizni kiriting</p>
+                    <button class="hidden" id="login">Kirish</button>
+                </div>
+                <div class="toggle-panel toggle-right">
+                    <h1>Assalomu alaykum!</h1>
+                    <p>Saytning barcha imkoniyatlaridan foydalanish uchun shaxsiy ma'lumotlaringizni kiriting</p>
+                    <button class="hidden" id="register">Ro'yhatdan o'tish</button>
+                </div>
+            </div>
+        </div>
+    </div>  
+</div>
+<div id="message"></div>
+    <script src="login.js"></script>
+    <script src="parking.js"></script>
+</body>
+
+</html>

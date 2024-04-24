@@ -1,0 +1,249 @@
+#header .fixed{
+  width: 25%;
+  height: 100vh;
+  position: fixed;
+  left: 0;
+  display: flex;
+  /* justify-content: center;
+  align-items: center; */
+  flex-direction: column;
+  background-color: rgb(17, 17, 17);
+  background-size: cover;
+  background-repeat: no-repeat;
+  float: left;
+  border-right: 2px solid rgba(40, 39, 39, 0.64);
+}
+
+.btn-kirish{
+  position: absolute;
+  right: 3%;
+  bottom: 12%;
+  width: 6%;
+  height: 70%;
+  color: #ffffff;
+  text-align: center;
+  border-radius: 7px; 
+  background-color: rgb(34, 74, 255);
+  cursor: pointer;
+  border: 3px solid #2a46b58f;
+}
+
+.btn-kirish a{
+  color: #ffffff;
+  text-align: center;
+}
+
+/*popup start*/
+.dashboard#blur.active{
+  filter: blur(20px);
+  pointer-events: none;
+  user-select: none;
+}
+
+#popup{
+  position: fixed;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  width: 500px;
+  padding: 50px;
+  box-shadow: 0 5px 30px rgba(6, 6, 6, 0.3);
+  background-color: rgb(25, 25, 25);
+  border-radius: 5%;
+  text-align: center;
+  visibility: hidden;
+  opacity: 0;
+  transition: 0.5s;
+}
+
+#popup h3{
+  color: #f8f8f8;
+}
+
+#popup.active{
+  top: 50%;
+  visibility: visible;
+  opacity: 1;
+  transform: 0.5s;
+}
+#popup a{
+  background-color: rgb(34, 74, 255);
+  text-decoration: none;
+  border: 2px solid rgb(34, 74, 255);
+  padding: 10px;
+  border-radius: 4px;
+  color: #f8f8f8;
+}
+#popup .xicon{
+  width: 8%;
+  height: 12%;
+  /* background-color:  rgb(25, 25, 25); */
+  text-decoration: none;
+  border: none;
+  padding: 2%;
+  border-radius: 4px;
+  color: #f8f8f8;
+  cursor: pointer;
+  position: absolute;
+  right: 2%;
+  top: 2%;
+}
+
+/*popup end*/
+
+
+
+.navbar{
+  width: 100%;
+  padding-left: 40px;
+  height: 60px;
+  color: rgb(49,185,206);
+  background: rgb(19,18,18);
+}
+
+.bosh-btn {
+  display: flex; 
+  align-items: center;  
+  gap: 5px;  
+}
+
+.div-bosh{
+  width: 10%; 
+  height: 45%; 
+  border-radius: 7px; 
+  background: #1e2951b3;
+  cursor: pointer;
+  border: 3px solid #2a46b58f;
+  display: flex;  /* Flexbox yordamida elementlarni yonma-yon joylashtirish */
+  align-items: center;  /* Vertikal markazlash */
+  gap: 50%;  /* Tugma va matn orasida masofa */
+  margin-left: 10%;
+  margin-top: 5%;
+}
+
+.button-description {
+  color: #ffffff;  /* Tavsif matnining rangi */
+  font-size: 18px;  /* Tavsif matnining hajmi */
+  padding: 5%;
+  margin-top: 5%;
+}
+
+.div-band{
+  width: 10%; 
+  height: 45%; 
+  border-radius: 7px; 
+  background: #a8b819c2;
+  cursor: pointer;
+  border: 3px solid #bdd91f;
+  display: flex;
+  align-items: center;
+  gap: 50%;
+  margin-left: 10%;
+  margin-top: 5%; 
+}
+
+.band-btn{
+  display: flex; 
+  align-items: center;  
+  gap: 5px;
+}
+
+.div-siz{
+  width: 10%; 
+  height: 45%; 
+  border-radius: 7px; 
+  background: #4bb819c2;
+  cursor: pointer;
+  border: 3px solid #5ad91f;
+  display: flex;
+  align-items: center;
+  gap: 50%;
+  margin-left: 10%;
+  margin-top: 5%; 
+}
+
+.siz-btn{
+  display: flex; 
+  align-items: center;  
+  gap: 5px;
+}
+
+.tolov{
+  padding-left: 10%;
+  margin-left: 25%;
+  width: 50%;
+  height: 7%;
+  color: #fff;
+  background-color: rgb(34, 74, 255);
+  align-items: center;
+  display: flex;
+  border-radius: 15%;
+  }
+
+table{
+  width: 100%;
+  height: 123%;
+  padding-left: 0%;
+  padding-top: 2%;
+} 
+
+td{
+  padding-left: 2%;
+  background-color: rgb(0, 0, 0);
+  padding-top: 3%;
+  padding-bottom: 3%;
+} 
+
+body{
+  background-color: black;
+}
+
+.slot1, .slot2, .slot3, .slot4, .slot5, .slot6, .slot7{
+  left: 0;
+  border-left:3px solid rgba(105, 105, 105, 0.64) ;
+  border-right: solid rgba(105, 105, 105, 0.64);
+  border-top:3px solid rgba(105, 105, 105, 0.64)
+}
+
+.button1, .button2, .button3, .button4, .button5, .button6, .button7, .button8, .button9, .button10, .button11, .button12, .button13, .button14, .button15, .button16, .button17, .button18, .button19, .button20, .button21, .button22, .button23, .button24{
+  /* border: 0; 
+  outline: 0; */
+  width: 40%; 
+  height: 140%; 
+  border-radius: 15px; 
+  background: #1e2951b3;
+  font-size: 12px;
+  color: aliceblue;
+  cursor: pointer;
+  border: 3px solid #2a46b58f;
+  padding-left: 3%;
+  margin-left: 20%;
+  padding-right:0 ;
+  padding-top: 3%;
+    
+}
+
+p{
+  rotate: 90deg;
+
+}
+
+.slot18, .slot19, .slot20, .slot21, .slot22, .slot23, .slot24{
+  left: 0;
+  border-left:3px solid rgba(105, 105, 105, 0.64) ;
+  border-right: solid rgba(105, 105, 105, 0.64);
+  border-bottom:5px solid rgba(105, 105, 105, 0.64);
+}
+
+.slot8, .slot9, .slot10, .slot11, .slot12{
+  border-left: 3px solid rgba(105, 105, 105, 0.64) ;
+  border-right: 3px solid rgba(105, 105, 105, 0.64);
+  border-bottom: 3px solid rgba(105, 105, 105, 0.64);
+}
+
+.slot13, .slot14, .slot15, .slot16, .slot17{
+  border-left: 3px solid rgba(105, 105, 105, 0.64) ;
+  border-right: 3px solid rgba(105, 105, 105, 0.64);
+  border-top: 3px solid rgba(105, 105, 105, 0.64);
+}
+
